@@ -1,0 +1,419 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #051421;
+    background-size: 100vw 100vh;
+    margin: 0;
+}
+
+.active{
+    color: black;
+    background-color: #01325e;
+    border-style: solid;
+    border-color: black;
+    padding: 0.5% 1% 0.5% 1%; 
+}
+
+.links a:hover{
+    color: white;
+    background-color: #01325e;
+    border-style: solid;
+    border-color: black;
+    padding: 0.5% 1% 0.5% 1%;
+}
+
+.social a:hover{
+    color: aqua;
+    background-color: none;
+    border-style: none;
+    border-color: none;
+}
+
+header{
+    background-color: #073155;
+    background:url("../images/back1.jpg");
+    background-size:100% 100%;
+    height: 11vh;
+    font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow:-1px 1px 0 #000, 
+                1px 1px 0 #000, 
+                1px -1px 0 #000; 
+}
+
+main{
+    color: white;
+    padding: 1%;
+}
+
+.content{
+    height: 60vh;
+    width: 100%;
+    display: block;
+    opacity: 0.7;
+}
+
+img{
+    height: 85%;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 1%;
+}
+
+.imgs{
+    text-decoration:none;
+    font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+    color: black;
+    background: transparent;
+    font-size: 100%;
+}
+
+
+p{
+    text-align: center;
+    padding: 0.5%;
+    margin: 0 auto;
+    background-color: white;  
+}
+
+footer{
+    background: black;
+    color: white;
+    height: 25vh;
+    padding: 2%;
+    overflow: hidden;
+}
+footer p{
+    background: black;
+    opacity: 1;
+    text-align: center;
+}
+.social{
+    text-align: center;
+    background: black;
+    padding: 2%;
+    margin: 0 auto;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+    font-size:250%;
+}
+
+iframe{
+    width:100%;
+    height: 85%;
+}
+
+.content:hover{
+    font-size: 2em;
+    opacity: 1;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #5d5fd1;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+@media screen and (max-width: 1199px)
+{
+    h3{
+        display: none;
+    }
+
+    h1{
+        display: inline-block;
+        float: left;
+        margin-left: 3%;
+    }
+    h1 a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar {
+        float: right;
+        overflow: hidden;
+        left: auto;
+        margin-top: 1.6%;
+    }
+      
+    .navbar a {
+        float: right;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        left: auto;
+    }
+      
+    .dropdown {
+        float: left;
+        overflow: hidden;
+        left: auto;
+    }
+      
+    .dropdown .dropbtn {
+        font-size: 150%;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        left:auto;
+        margin: 0;
+        overflow: auto;
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: black;
+        left: auto;
+        border-style:solid;
+        color: white;
+    }
+    /*.links {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 4px;
+        left:auto;
+        opacity: 0.88;
+        min-width: 100%;
+      }
+      
+    .links a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        left: auto;
+        width: 100%;
+      }
+      
+      .links a:hover {
+        border-style: solid;
+        left: auto;
+      }*/
+
+      .links {
+        display: none;
+        position: absolute;
+        background-color: black;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 4px;
+        left:auto;
+        opacity: 0.88;
+      }
+      
+    .links a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        left: auto;
+        font-size: 100%;
+      }
+      
+      .links a:hover {
+        border-style: solid;
+        left: auto;
+      }
+      
+      .dropdown:hover .links {
+        display: block;
+      }
+      .links a.active {
+        border-style: solid;
+        border-width:6px;  
+      }
+
+      .content4{
+        text-align: center;
+        height: auto;
+        width: 49%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }     
+}
+
+@media screen and (max-width: 786px)
+{
+    .content4{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }     
+}
+
+@media screen and (min-width: 1000px){
+    .content{
+        height: 60vh;
+        width: 49.5%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+
+    .active{
+        color: black;
+        background-color: #01325e;
+        border-style: solid;
+        border-color: black;
+        padding: 0.5% 1% 0.5% 1%; 
+    }
+
+    .links a:hover{
+        color: white;
+        background-color: #01325e;
+        border-style: solid;
+        border-color: black;
+        padding: 0.5% 1% 0.5% 1%;
+    }
+
+    .social a:hover{
+        color: aqua;
+    }
+
+   
+    a p{
+        height:10%;
+    }
+    .social a{
+        margin: 5%;
+        font-size:250%;
+    }
+
+    
+}
+@media screen and (min-width: 1200px){
+    .content{
+        height: 60vh;
+        width: 33%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .content4{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    #mail::after{
+        content:"email";
+    }
+    #linkedin::after{
+        content:"linkedin";
+    }
+    #fb::after{
+        content:"facebook";
+    }
+
+    #insta::after{
+        content:"Instagram";
+    }
+
+    #git::after{
+        content:"github";
+    }
+
+
+
+    .social a{
+        margin: 0.7%;
+        font-size:250%;
+    }
+    #tweet::after{
+        content:"twitter";
+    }
+
+    header{
+        padding: 2%;
+        height: 24vh;
+    }
+    h1{
+        text-align:center;
+        margin-left: 1.5%;
+    }
+    h1 a{
+        text-decoration: none;
+        color: white;
+    }
+    .dropbtn{
+        display: none;
+    }
+    .links{
+        text-align: left;
+        margin-top: 4%;
+        margin-left: 0%;
+    }
+    .links a{
+        margin: 2%;
+        color: white;
+        text-decoration: none;
+    }
+
+    h3{
+        text-align: center;
+        margin-left: 1.5%;
+        font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+    }
+}
